@@ -1,0 +1,502 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital@1&family=Poppins:wght@300&family=Roboto+Mono&family=Source+Code+Pro:wght@200;300&family=Source+Sans+Pro&display=swap');
+body{
+    margin: 0;
+    padding: 0;
+}
+.normal{
+    padding: 10px 40px;
+    background-color: white;
+    border: 3px solid rgb(255, 115, 0);
+    color: rgb(255, 115, 0);
+    font-weight: 600;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    border-radius: 3px;
+    transition: .2s;
+}
+#nav-bar{
+    padding: 0 60px;
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+    height: 80px;
+    box-shadow: 0 2px 5px 1px rgba(0, 0, 0, 0.6),0 2px 5px 1px rgba(251, 247, 247, 0.96);
+    position: sticky;
+    background-color: #fff;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+.menu{
+    display: none;
+}
+.nav-logo{
+    display: flex;
+    align-items: center;
+}
+.nav-logo img{
+    width: 80px;
+    height: 100%;
+    margin: 0 14px;
+    background: transparent;
+}
+.navigation{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navigation li{
+    list-style: none;
+    padding: 10px;
+    
+}
+.navigation li a{
+    text-decoration: none;
+    color: dimgray;
+    font-size: large;
+}
+
+#hero{
+    height: 88vh;
+    background-image: url("/images/hero.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+@keyframes anime{
+    0%{
+        transform: translateY(20px);
+    }
+    100%{
+        transform: translateY(-40px);
+    }
+    
+}
+#hero img{
+    max-width: 600px;
+    max-height: 500px;
+    margin-left: 30px;
+    background: transparent;
+    transition: all 1s ease;
+    animation: anime 2s infinite alternate;
+}
+
+.text{
+    max-width: 500px;
+    margin-right: 50px;
+    
+}
+.text h1{
+    font-weight: bolder;
+    font-size: 3rem;
+    margin: 10px 0;
+    color: rgb(59, 56, 56);
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+.text p{
+    justify-content: left;
+    color: rgb(107, 104, 104);
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 1.5rem;
+}
+.text button{
+    border: 3px solid rgb(255, 115, 0);
+    color: rgb(255, 115, 0);
+    font-weight: 600;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    border-radius: 3px;
+    transition: .2s;
+}
+.text button:hover{
+    color: white;
+    background-color: rgb(255, 115, 0);
+    
+}
+
+#speciality{
+    background-color: azure;
+    padding: 0 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#speciality h1{
+    text-align: center;
+    font-size: 32px;
+}
+
+.dish-img{
+    width: 100px;
+    height: 100px;
+    
+}
+.dish-container{
+    margin-top: 14px 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.dish-card{
+    max-width: 350px;
+    max-height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 24px 10px;
+    background-color: #fff;
+    box-shadow: 0 0 12px 2px rgba(0, 0, 0, 0.1);
+    border-radius: 3px;
+    margin: 20px 10px;
+    position: relative;
+    flex-shrink: 2;
+}
+.card-img{
+    width: 100%;
+    height: 0;
+    transition: all .8s ease-in-out;
+    position: absolute;
+    top: 0;
+    margin: 0;
+}
+.dish-card:hover .card-img{  
+    height: 100%;
+    visibility: visible;
+}
+.card-img img{
+    width: 100%;
+    height: 100%;
+
+}
+.dish-card h3{
+    margin: 10px 0;
+    font-weight: bold;
+    font-size: 24px;
+}
+.dish-card p{
+    text-align: center;
+    color: #787a91;
+    margin: 0;
+}
+
+#popular{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    padding: 20px 40px;
+}
+#popular h1,.normal2{
+    font-size: 32px;
+    font-weight: bold;
+}
+.popular-container
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    
+}
+.pupolar-food {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* border: 1px solid #787a91; */
+    padding: 14px;
+    border-radius: 2px;
+    box-shadow: 0px 0px 5px 0px #000;
+    background-color: #fff;
+    margin: 10px;
+}
+.pupolar-food h3{
+    margin: 10px;
+    
+}
+.pupolar-food img{
+    width: 340px;
+    height: 250px;
+    border-radius: 2px;
+}
+.pupolar-food .stars{
+    margin-bottom: 10px;
+}
+.pupolar-food button:hover{
+    color: white;
+    background-color: rgb(255, 115, 0);
+    
+}
+#work{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* background-color: aliceblue; */
+}
+.work-container
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.work-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 200px;
+    padding: 24px;
+    margin: 14px;
+}
+.work-card img{
+    max-width: 165px;
+    max-width: 165px;
+    border-radius: 50%;
+    padding: 10px;
+    background-color: #fff;
+    box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.2);
+}
+.work-card h2{
+    text-align: center;
+    color: rgb(76, 74, 74);
+}
+
+#gallery{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 40px;
+}
+.g-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.g-card
+{
+    position: relative;
+    width: 350px;
+    height: 250px;
+    transition: all 1s ease;
+    margin: 20px;
+}
+.g-img{
+    width: 350px;
+    height: 250px;
+    padding: 10px;
+    background-color: #fff;
+    box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.2);
+    position: absolute;
+}
+.g-text{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    justify-content: center;
+    position: absolute;
+    padding: 10px;
+    background-color: #fff;
+    opacity: 0.9;
+    /* top: -100%; */
+    display: none;
+    transition: all 1s ease;
+}
+.g-card:hover .g-text{
+    display: block;
+}
+.g-text p{
+    color: gray;
+}
+.g-text button:hover{
+    background-color: tomato;
+    color: white;
+}
+.into{
+    display: none;
+}
+#Reviews{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 40px;
+}
+.review-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+.review-card{
+    
+    max-width: 23%;
+    text-align: center;
+    background-color: #143f6b;
+    margin: 10px;
+    padding: 14px;
+    box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.2);
+    border: 4px solid white;
+    position: relative;
+}
+.review-card h3{
+    color: white;
+}
+.review-card img{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    padding: 5px;
+    background-color: white;
+    margin-top: -80px;
+}
+@media  (min-width:600px) and (max-width:1000px) {
+    #hero {
+        padding: 10px 14px;
+        justify-content: space-between;
+    }
+    #hero img { 
+        max-width: 50%;
+        margin-left: 0px;
+    }
+    .text h1 {
+        font-weight: bolder;
+        font-size: 2rem;
+        margin: 10px 0;
+        color: rgb(59, 56, 56);
+        font-family: 'Montserrat', sans-serif;
+        font-family: 'Source Sans Pro', sans-serif;
+    }
+    .text p {
+        /* justify-content: center; */
+        color: rgb(107, 104, 104);
+        font-family: 'Montserrat', sans-serif;
+        font-family: 'Source Sans Pro', sans-serif;
+        font-size: 1.2rem;
+       
+    }
+    .text {
+        margin-left: 14px;
+        height: 80%;
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    #speciality {
+        background-color: azure;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .dish-card {
+        max-width: 40%;
+        max-height: 200px;
+    }
+    .pupolar-food {
+        max-width: 40%;
+    }
+    .pupolar-food img {
+        width: 100%;
+    }
+    .popular-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .g-card {
+        position: relative;
+        max-width: 40%;
+        height: 250px;
+        transition: all 1s ease;
+        margin: 20px;
+    }
+    .g-img {
+        max-width: 100%;
+        height: 250px;
+        padding: 10px;
+        background-color: #fff;
+        box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.2);
+        position: absolute;
+    }
+}
+
+@media screen and (max-width:599px) {
+    #nav-bar {
+      padding: 0;
+    }
+    .menu{
+        margin-right: 14px;
+        margin-top: 27px;
+        display: block;
+    }
+    .into{
+        display: block;
+    }
+    .navigation {
+        display: block;
+        height: 100vh;
+        background-color: azure;
+        color: white;
+        margin-top: -10px;
+        padding: 14px;
+        width: 30%;
+        position: fixed;
+        right: -100%;
+        transition: all 1s ease;
+    }
+    .scroll{
+        right: 0;
+    }
+    .back{
+        right: -100%;
+    }
+    #hero img {
+        max-width: 50%;
+        max-height: 500px; 
+    }
+    .text{
+        margin: 0 14px;
+        width: 50%;
+        
+    }
+    .text h1 {
+        font-size: 2rem;
+        margin: 10px 0;
+        text-align: center;
+    }
+    .text p {
+        font-size: 16px;
+        text-align: center;
+    }
+    #speciality{
+        padding: 0;
+        margin: 0;
+    }
+    .dish-card{
+        max-width: 100%;
+        margin: 0;
+        box-shadow: none;
+        border: 1px solid black;
+    }
+    .review-card {
+        max-width: 66%;
+        text-align: center;
+        background-color: #143f6b;
+        margin: 10px;
+        padding: 14px;
+        box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.2);
+        border: 4px solid white;
+        position: relative;
+        margin-top: 66px;
+    }
+}
